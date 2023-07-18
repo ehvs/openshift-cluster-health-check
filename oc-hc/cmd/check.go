@@ -111,16 +111,6 @@ func run(obj checkOptions) {
 		}
 	}
 
-	// prerequired check
-	err = clusterAdmin(clientset)
-	if err != nil {
-		if obj.debug {
-			customPanic(err, true)
-		} else {
-			customPanic(err, false)
-		}
-	}
-
 	// control plane checks
 	err = coStatus(config)
 	if err != nil {
