@@ -22,6 +22,7 @@ $ cp oc-hc ~/bin/
 ```
 
 ## Usage
+
 This tool can be used on its own or as a submodule for _oc_ cli.
 Ensure the user running this tool has cluster-admin privileges and run the command below:
 
